@@ -1,1 +1,2 @@
 # tell bazel to ignore some paths
+# https://docs.bazel.build/versions/master/guide.html#.bazelignore

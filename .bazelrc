@@ -1,1 +1,4 @@
+# .bazelrc is config for bazel environment.
+# https://docs.bazel.build/versions/master/guide.html#bazelrc
+
 test --build_tests_only --features=race --test_output=all

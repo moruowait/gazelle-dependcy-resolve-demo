@@ -10,6 +10,10 @@ load("//go:repositories.bzl", "go_repositories")
 
 go_repositories()
 
+load("//go:third_party_repositories.bzl", "third_party_repositories")
+
+third_party_repositories()
+
 load("//go:def.bzl", "register_go_rules")
 
 register_go_rules()

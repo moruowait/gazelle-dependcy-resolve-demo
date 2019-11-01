@@ -3,13 +3,13 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 go_library(
     name = "go_default_library",
     srcs = ["main.go"],
-    importpath = "bazeldemo/cacheproject",
+    importpath = "demo/testproject",
     visibility = ["//visibility:private"],
-    deps = ["@com_github_google_go_cmp//cmp:go_default_library"],
+    deps = ["@io_opencensus_go_contrib_exporter_stackdriver//:go_default_library"],
 )
 
 go_binary(
-    name = "cacheproject",
+    name = "testproject",
     embed = [":go_default_library"],
     visibility = ["//visibility:public"],
 )
